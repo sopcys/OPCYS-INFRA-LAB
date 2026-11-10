@@ -1,0 +1,26 @@
+openrc.sh
+
+# Providers et cache
+.terraform/
+
+# State (peut contenir des secrets en clair)
+*.tfstate
+*.tfstate.*
+crash.log
+
+.terraformrc
+terraform.rc
+
+# Variables et secrets
+*.tfvars
+*.tfvars.json
+.env
+.envrc
+*.pem
+*.key
+
+# Overrides locaux
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf
